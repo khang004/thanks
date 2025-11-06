@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Yêu Thương 💗</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffe0ff, #d4f8d4);
+            font-family: "Segoe UI", sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #ffb6ff, #b344ff);
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(179, 68, 255, 0.4);
+            font-family: cursive;
+        }
+
+        ul {
+            list-style-type: "💖 ";
+            background: linear-gradient(135deg, #ffb5ec, #64d15e);
+            border-radius: 15px;
+            padding: 20px 30px;
+            font-family: "Segoe UI", sans-serif;
+            color: #7a1fa2;
+            font-size: 18px;
+            line-height: 1.7;
+            box-shadow: 0 4px 20px rgba(247, 170, 255, 0.4);
+        }
+
+        h2 {
+            text-align: center;
+            color: #d63384;
+            font-size: 24px;
+        }
+
+        /* Ẩn control của audio */
+        audio {
+            display: none; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1>Hello Em nhé! đây là những lời thật lòng của anh trong tình yêu của anh dành cho em nè ❤️</h1>
+        </div>
+        <form>
+            <ul>
+                <li>ANH RẤT CẢM ƠN EM TRONG THỜI GIAN QUA ĐÃ CHẤP NHẬN VÀ ĐỒNG HÀNH CÙNG ANH TRONG SUỐT THỜI GIAN
+                    DÀI. CẢM ƠN EM VÌ ĐÃ CHỊU KHÓ CÙNG ANH. NHÌU LÚC ANH CŨNG THẤY THỜI GIAN CỦA EM RẤT ÍT NHƯNG MÀ
+                    BẮT EM ĐỢI HOÀI ĐỢI MÃI KHÔNG BIẾT CHỪNG NÀO MỚI THỰC HIỆN ƯỚC MƠ CÙNG CHUNG MỘT NHÀ VỚI EM HAHA.
+                    THÔI CHẮC LÀ HONG SAO ĐÂU EM NHỈ!! EM CÓ NÓI RẰNG LÀ ĐỢI ANH 2 NĂM... VÌ VẬY ANH SẼ CỐ GẮNG HƠN ĐỂ
+                    SAU NÀY CHÚNG TA CÙNG CHUNG MỘT NHÀ EM NHÓA ❤️ ANH SẼ KHÔNG ĐỂ CÁI THỜI GIAN ĐỢI ANH CỦA EM LÀM
+                    CHO EM THẤY THẤT VỌNG. <b>ANH HỨA VỚI EM ĐẤY ❤️❤️</b>
+                </li>
+                <br>
+                <li>ANH CẢM THẤY RẤT VUI KHI Ở BÊN CẠNH EM VÀ CÙNG EM ĐI CHƠI, SỐNG CHILL CHILL TRONG NHỮNG THÁNG NGÀY
+                    QUEN NHAU. CÓ NHỮNG KHOẢNH KHẮC ANH THẤY RẤT HAPPY VÀ NHỚ MÃI 💕</li>
+                <br>
+                <li>ANH HỨA SẼ CHO EM MẶC CÁI VÁY MÀU TRẮNG CÓ CÁI TÀ VÁY DÀI, VÀ NGƯỜI ĐỨNG BÊN CẠNH EM KHÔNG AI KHÁC
+                    CHÍNH LÀ ANH 😘 <b>ANH SẼ CƯỚI EM ❤️❤️</b></li>
+                <br>
+                <li>NÓI CHUNG ANH VIẾT CÁI NÀY ĐỂ GỬI ĐẾN EM LỜI CẢM ƠN CHÂN THÀNH TỪ TẬN ĐÁY LÒNG. ANH RẤT TRÂN TRỌNG
+                    MỐI QUAN HỆ NÀY VÀ ANH SẼ KHÔNG BAO GIỜ <b>SAY BYE</b> VỚI EM. 💗 ĐÂY LÀ <b>BẰNG CHỨNG</b> ANH DÀNH
+                    CHO EM 🥰</li>
+                <br>
+                <li><b>ANH VERY VERY LOVE YOU BÂY GIỜ VÀ SAU NÀY 💗💗💗</b>  
+                    (NHỮNG LỜI ANH NÓI RA LÀ TỪ TRÁI TIM — MÃI YÊU EM ❤️)
+                </li>
+                <br>
+                <h2>I LOVE YOU NGƯỜI CON GÁI ANH YÊU TẬN ĐÁY LÒNG 💗💗💗</h2>
+            </ul>
+        </form>
+    </div>
+
+    <audio id="music" loop autoplay controls> 
+        <source src="/media/music.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ phát nhạc.
+    </audio>
+
+    <script>
+        const music = document.getElementById("music");
+        
+        // Cố gắng phát nhạc khi trang tải xong
+        // Một số trình duyệt chặn `autoplay`, nên thêm `onclick` để xử lý
+        music.oncanplay = () => {
+            music.playbackRate = 1.35; // phát nhanh hơn
+            music.play().catch(err => {
+                console.log("Trình duyệt chặn tự động phát:", err);
+            });
+        };
+
+        // Nếu bị chặn autoplay, chỉ cần click vào bất cứ đâu trên body là phát
+        document.body.addEventListener("click", () => {
+            music.play().catch(err => {
+                // Xử lý lỗi nếu vẫn không thể phát khi click
+                console.log("Không thể phát nhạc sau khi click:", err);
+            });
+        });
+
+        // Xóa `onclick` cũ và dùng `click` chuẩn hơn
+        document.body.removeEventListener("onclick", () => { // Loại bỏ listener không chuẩn
+            music.play();
+        });
+    </script>
+</body>
+
+</html>
